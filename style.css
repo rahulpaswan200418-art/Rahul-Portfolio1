@@ -137,18 +137,6 @@ header .navbar li a:hover {
   display: flex;
   align-items: center;
 }
-
-.back-video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1;
-  filter: brightness(60%) contrast(110%);
-}
-
 .home-content {
   display: flex;
   justify-content: space-between;
@@ -432,9 +420,13 @@ header .navbar li a:hover {
 
 .back-video {
   position: absolute;
-  right: 0;
-  bottom: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   z-index: -1;
+  filter: brightness(60%) contrast(110%);
 }
 
 @media (min-aspect-ratio: 16/10) {
@@ -445,7 +437,7 @@ header .navbar li a:hover {
 }
 @media (max-aspect-ratio: 16/10) {
   .back-video {
-    width: auto;
+    width: 100%;
     height: 100%;
   }
 }
@@ -1300,3 +1292,4 @@ footer {
     justify-content: center;
   }
 }
+
